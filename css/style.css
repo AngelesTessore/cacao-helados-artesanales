@@ -1,0 +1,95 @@
+/* Base */
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+/* Components */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #011010;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #011414;
+}
+header nav.primera-lista, header nav.segunda-lista {
+  height: 100%;
+  font-size: 18px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+header nav.primera-lista .custom-toggler.navbar-toggler, header nav.segunda-lista .custom-toggler.navbar-toggler {
+  border-color: #011414;
+  color: transparent;
+}
+header nav.primera-lista .navbar-toggler-icon, header nav.segunda-lista .navbar-toggler-icon {
+  background-image: url("../images/icono-menu.png");
+  width: 40px;
+  height: 40px;
+}
+header nav.primera-lista ul, header nav.segunda-lista ul {
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #011414;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+}
+header nav.primera-lista ul li, header nav.segunda-lista ul li {
+  display: inline-flex;
+  padding: 10px 15px;
+  background-color: #011414;
+}
+header nav.primera-lista ul li a, header nav.segunda-lista ul li a {
+  text-decoration: none;
+}
+header nav.primera-lista ul li a:link, header nav.segunda-lista ul li a:link {
+  color: #feebeb;
+}
+header nav.primera-lista ul li a:visited, header nav.segunda-lista ul li a:visited {
+  color: #feebeb;
+}
+header nav.primera-lista ul li a:active, header nav.segunda-lista ul li a:active {
+  color: #feebeb;
+}
+header nav.primera-lista ul li a:hover, header nav.segunda-lista ul li a:hover {
+  color: #368f96;
+}
+header .logo {
+  display: flex;
+  background-color: #011414;
+}
+header .logo img {
+  width: 100px;
+  height: 100px;
+}
+header nav.primera-lista {
+  justify-content: flex-start;
+}
+header nav.segunda-lista {
+  justify-content: flex-end;
+}
+header nav.segunda-lista .carrito {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=style.css.map */
