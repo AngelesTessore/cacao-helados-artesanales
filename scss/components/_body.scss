@@ -1,7 +1,34 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     @extend %general;
     font-family: 'Poppins', sans-serif;
     background-color: $color-bg-dark;
+}
+
+h1 {
+    color: $color-title;
+    padding: 40px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    @media only screen and (max-width: 767px) {
+        font-size: 36px;
+        padding: 30px;
+    }
+}
+
+h2 {
+    padding: 20px;
+    font-size: 28px;
+    text-align: left;
+    color: $color-title;
+    @media only screen and (max-width: 767px) {
+        font-size: 20px;
+        text-align: center;
+    }
 }

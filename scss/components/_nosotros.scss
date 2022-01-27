@@ -1,0 +1,58 @@
+section#nosotros {
+    @extend %vista-dsktp;
+    flex-direction: column;
+    width: 100%;
+    div.flex-container {
+        @extend %vista-dsktp;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+            padding: 0 60px;
+        }
+        .texto-nosotros {
+            width: 45%;
+            height: 550px;
+            @media only screen and (max-width: 767px) {
+                width: 75%;
+                height: auto;
+                text-align: center;
+            }
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 100px;
+                font-size: $size-font-dsktp-text;
+                color: $color-text;
+                @media only screen and (max-width: 767px) {
+                    font-size: $size-font-mobile-text;
+                    padding-bottom: 80px;
+                }
+            }
+        }
+        .galeria {
+            @extend %vista-dsktp;
+            width: 45%;
+            overflow: hidden;
+            box-sizing: border-box;
+            justify-content: center;
+            @media only screen and (max-width: 767px) {
+                display: none;
+            }
+            .carousel-item img {
+                object-fit: cover;
+                height: 500px;
+            }    
+        }
+        .galeria-mobile {
+            width: 75%;
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+}
