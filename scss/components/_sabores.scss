@@ -29,14 +29,14 @@ section#seccion-sabores {
                 width: 50%;
             }
             h3 {
-                font-size: 20px;
+                font-size: map-get($size-h3, size-dsktp-h3);
                 color: $color-text;
                 &:hover {
                     background-color: $color-text;
                     color: $color-bg-light;
                 }
                 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
-                    font-size: 18px;
+                    font-size: map-get($size-h3, size-tablet-h3);
                 }
             }
             .lista-sabores {
