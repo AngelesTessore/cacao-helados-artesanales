@@ -11,7 +11,7 @@ footer, body {
   width: 100%;
 }
 
-section#seccion-sabores, section.ubicacion-mapa, section#servicios .flex-container-servicios .div-servicios, section#servicios, section#nosotros div.flex-container .galeria, section#nosotros div.flex-container, section#nosotros, section.frase-marca, header nav.primera-lista, header nav.segunda-lista, header {
+section .pedidos, section#seccion-sabores, section.ubicacion-mapa, section#servicios .flex-container-servicios .div-servicios, section#servicios, section#nosotros div.flex-container .galeria, section#nosotros div.flex-container, section#nosotros, section.frase-marca, header nav.primera-lista, header nav.segunda-lista, header {
   display: flex;
   align-items: center;
 }
@@ -656,5 +656,117 @@ section#seccion-sabores .ed-limitada .sabor-dos img:hover {
 }
 
 /*@media only screen and (min-width: 768px) and (max-width: 992px)*/
+/* Productos */
+section#seccion-productos {
+  padding: 80px 0;
+}
+section#seccion-productos h1.principal {
+  padding-bottom: 80px;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-productos h1.principal {
+    padding-bottom: 30px;
+  }
+}
+section#seccion-productos .productos {
+  width: 100%;
+  height: 550px;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-productos .productos {
+    height: auto;
+  }
+}
+section#seccion-productos .productos .bloque {
+  line-height: 2;
+  margin: 0px 40px;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-productos .productos .bloque {
+    margin: 40px 0;
+    line-height: 1.5;
+  }
+}
+section#seccion-productos .productos .bloque h2 {
+  text-align: center;
+  padding: 10px;
+  color: #feebeb;
+}
+section#seccion-productos .productos .bloque .lista-productos {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  border-top: 1px solid #368f96;
+  border-bottom: 1px solid #368f96;
+  padding: 20px 0px;
+  color: #feebeb;
+}
+section#seccion-productos .productos .bloque .lista-productos:hover {
+  box-shadow: 0px 0px 2px 1px #368f96;
+}
+@media only screen and (max-width: 767px) {
+  section#seccion-productos .productos .bloque .lista-productos {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-productos .productos .bloque .lista-productos {
+    font-size: 16px;
+  }
+}
+section#seccion-productos .productos .img-costados {
+  height: 450px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  section#seccion-productos .productos .img-costados {
+    height: auto;
+    max-height: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-productos .productos .img-costados {
+    height: auto;
+    max-height: 450px;
+  }
+}
+
+section .pedidos {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin: 60px 0;
+  /* Transición */
+  transition: all 1s;
+}
+section .pedidos:hover {
+  transform: scale(1.5);
+}
+section .pedidos .icono-pedidos {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section .pedidos .icono-pedidos {
+    width: 50px;
+    height: 50px;
+  }
+}
+section .pedidos p {
+  font-size: 20px;
+  color: #feebeb;
+}
+@media only screen and (max-width: 767px) {
+  section .pedidos p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section .pedidos p {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
