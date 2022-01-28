@@ -1,3 +1,4 @@
+/* Nosotros*/
 section#nosotros {
     @extend %vista-dsktp;
     flex-direction: column;
@@ -7,14 +8,14 @@ section#nosotros {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
             flex-direction: column;
             padding: 0 60px;
         }
         .texto-nosotros {
             width: 45%;
             height: 550px;
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
                 width: 75%;
                 height: auto;
                 text-align: center;
@@ -29,6 +30,10 @@ section#nosotros {
                     font-size: $size-font-mobile-text;
                     padding-bottom: 80px;
                 }
+                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                    font-size: $size-font-tablet-text;
+                    padding-bottom: 80px;
+                }
             }
         }
         .galeria {
@@ -40,9 +45,17 @@ section#nosotros {
             @media only screen and (max-width: 767px) {
                 display: none;
             }
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                width: 75%;
+                height: 400px;
+                justify-content: center;
+            }
             .carousel-item img {
                 object-fit: cover;
                 height: 500px;
+                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                    height: auto;
+                }
             }    
         }
         .galeria-mobile {

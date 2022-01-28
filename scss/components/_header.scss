@@ -1,4 +1,4 @@
-
+/* Header */
 header {
     @extend %vista-dsktp;
     width: 100%;
@@ -9,7 +9,7 @@ header {
     top: 0;
     z-index: 1;
     background-color: $color-bg-light;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
         justify-content: space-around;
     }
     nav.primera-lista, nav.segunda-lista {
@@ -17,9 +17,8 @@ header {
         font-size: $size-font-dsktp-other;
         padding: 0 20px;
         box-sizing: border-box;
-        display: flex;
-        align-items: center;
         width: 45%;
+        @extend %vista-dsktp;
         .custom-toggler.navbar-toggler {
             border-color: $color-bg-light;
             color: transparent;
@@ -68,9 +67,9 @@ header {
     }
     nav.primera-lista {
         justify-content: flex-start;
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
             li.borde-inferior {
-            border-bottom: 1px solid rgb(54, 143, 150);
+            border-bottom: $border-general;
             }
         }
     }
@@ -80,13 +79,13 @@ header {
             width: 25px;
             height: 25px;
             vertical-align: middle;
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
                 display: inline-flex;
                 width: 50px;
                 height: 50px;
             }
         }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
             li.no-show-list {
                 display: none;
             }

@@ -1,14 +1,16 @@
+@charset "UTF-8";
 /* Base */
 /* Colores */
 /* Fuente */
 /* Bordes */
+/* Extends */
 footer, body {
   overflow-x: hidden;
   box-sizing: border-box;
   width: 100%;
 }
 
-section.ubicacion-mapa, section#servicios .flex-container-servicios .div-servicios, section#servicios, section#nosotros div.flex-container .galeria, section#nosotros div.flex-container, section#nosotros, section.frase-marca, header {
+section.ubicacion-mapa, section#servicios .flex-container-servicios .div-servicios, section#servicios, section#nosotros div.flex-container .galeria, section#nosotros div.flex-container, section#nosotros, section.frase-marca, header nav.primera-lista, header nav.segunda-lista, header {
   display: flex;
   align-items: center;
 }
@@ -34,6 +36,7 @@ body {
   background-color: #011010;
 }
 
+/* Headings - Aplica a todos los html */
 h1 {
   color: #368f96;
   padding: 40px;
@@ -47,6 +50,12 @@ h1 {
     padding: 30px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+    padding: 30px;
+  }
+}
 
 h2 {
   padding: 20px;
@@ -57,6 +66,12 @@ h2 {
 @media only screen and (max-width: 767px) {
   h2 {
     font-size: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
     text-align: center;
   }
 }
@@ -74,7 +89,14 @@ h4 {
     padding-top: 60px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  h4 {
+    font-size: 24px;
+    padding-top: 60px;
+  }
+}
 
+/* Header */
 header {
   width: 100%;
   height: 100px;
@@ -85,7 +107,7 @@ header {
   z-index: 1;
   background-color: #011414;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   header {
     justify-content: space-around;
   }
@@ -95,8 +117,6 @@ header nav.primera-lista, header nav.segunda-lista {
   font-size: 18px;
   padding: 0 20px;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
   width: 45%;
 }
 header nav.primera-lista .custom-toggler.navbar-toggler, header nav.segunda-lista .custom-toggler.navbar-toggler {
@@ -143,7 +163,7 @@ header .logo {
 header nav.primera-lista {
   justify-content: flex-start;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   header nav.primera-lista li.borde-inferior {
     border-bottom: 1px solid #368f96;
   }
@@ -156,29 +176,31 @@ header nav.segunda-lista .carrito {
   height: 25px;
   vertical-align: middle;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   header nav.segunda-lista .carrito {
     display: inline-flex;
     width: 50px;
     height: 50px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   header nav.segunda-lista li.no-show-list {
     display: none;
   }
 }
 
+/* Portada */
 section .fondo-portada {
   width: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section .fondo-portada {
     height: 100vh;
     object-fit: cover;
   }
 }
 
+/* Frase marca */
 section.frase-marca {
   justify-content: center;
   padding: 80px;
@@ -192,10 +214,17 @@ section.frase-marca {
     padding: 60px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section.frase-marca {
+    font-size: 24px;
+    padding: 60px;
+  }
+}
 section.frase-marca p {
   text-align: center;
 }
 
+/* Nosotros*/
 section#nosotros {
   flex-direction: column;
   width: 100%;
@@ -205,7 +234,7 @@ section#nosotros div.flex-container {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#nosotros div.flex-container {
     flex-direction: column;
     padding: 0 60px;
@@ -215,7 +244,7 @@ section#nosotros div.flex-container .texto-nosotros {
   width: 45%;
   height: 550px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#nosotros div.flex-container .texto-nosotros {
     width: 75%;
     height: auto;
@@ -235,6 +264,12 @@ section#nosotros div.flex-container .texto-nosotros p {
     padding-bottom: 80px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section#nosotros div.flex-container .texto-nosotros p {
+    font-size: 16px;
+    padding-bottom: 80px;
+  }
+}
 section#nosotros div.flex-container .galeria {
   width: 45%;
   overflow: hidden;
@@ -246,9 +281,21 @@ section#nosotros div.flex-container .galeria {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section#nosotros div.flex-container .galeria {
+    width: 75%;
+    height: 400px;
+    justify-content: center;
+  }
+}
 section#nosotros div.flex-container .galeria .carousel-item img {
   object-fit: cover;
   height: 500px;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section#nosotros div.flex-container .galeria .carousel-item img {
+    height: auto;
+  }
 }
 section#nosotros div.flex-container .galeria-mobile {
   width: 75%;
@@ -260,12 +307,13 @@ section#nosotros div.flex-container .galeria-mobile img {
   object-fit: cover;
 }
 
+/* Servicios */
 section#servicios {
   flex-direction: column;
   width: 100%;
   padding: 100px 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#servicios {
     padding: 60px 0;
   }
@@ -277,7 +325,7 @@ section#servicios .flex-container-servicios {
   justify-content: space-around;
   width: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#servicios .flex-container-servicios {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -290,7 +338,7 @@ section#servicios .flex-container-servicios .div-servicios {
   border: 0.5px solid #368f96;
   background-color: #ffffff;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#servicios .flex-container-servicios .div-servicios {
     width: 75%;
     box-sizing: border-box;
@@ -301,7 +349,7 @@ section#servicios .flex-container-servicios .div-servicios img {
   height: 60px;
   padding: 10px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#servicios .flex-container-servicios .div-servicios img {
     width: 50px;
     height: 50px;
@@ -313,7 +361,7 @@ section#servicios .flex-container-servicios .div-servicios p.recuadro {
   padding: 10px 5px;
   margin: 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#servicios .flex-container-servicios .div-servicios p.recuadro {
     padding: 10px;
   }
@@ -334,11 +382,12 @@ section#servicios .flex-container-servicios .div-servicios p.recuadro a:hover {
   color: #368f96;
 }
 
+/* Ubicación */
 section.ubicacion-mapa {
   flex-direction: column;
   justify-content: center;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section.ubicacion-mapa {
     box-sizing: border-box;
     width: 100%;
@@ -354,6 +403,11 @@ section.ubicacion-mapa p.ubicacion {
   section.ubicacion-mapa p.ubicacion {
     font-size: 14px;
     padding: 30px 0 20px 0;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 768px) and (max-width: 992px) {
+  section.ubicacion-mapa p.ubicacion {
+    font-size: 16px;
   }
 }
 section.ubicacion-mapa .no-show-div {
@@ -383,13 +437,24 @@ section.ubicacion-mapa .mapa {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section.ubicacion-mapa .mapa {
+    width: 50%;
+  }
+  section.ubicacion-mapa .mapa iframe {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+}
 
+/* Footer */
 footer {
   padding-top: 20px;
   background-color: #011414;
   font-size: 14px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   footer .div-footer {
     width: 100%;
     text-align: center;
@@ -429,6 +494,12 @@ footer .socialmedia {
     padding: 10px 0;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  footer .socialmedia {
+    width: 50%;
+    justify-content: center;
+  }
+}
 footer .socialmedia a {
   text-decoration: none;
 }
@@ -438,7 +509,7 @@ footer .socialmedia a img {
   height: 30px;
   margin: 5px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   footer .socialmedia a img {
     margin: 10px;
   }
