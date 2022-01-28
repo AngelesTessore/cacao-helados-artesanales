@@ -1,0 +1,66 @@
+footer {
+    @extend %general;
+    padding-top: 20px;
+    background-color: $color-bg-light;
+    font-size: $size-font-footer;
+    .div-footer {
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+            padding-left: 0;
+            padding-top: 10px;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            &:link {
+                color: $color-text;
+            }
+            &:visited {
+                color: $color-text;
+            }
+            &:active {
+                color: $color-text;
+            }
+            &:hover {
+                color: $color-hover;
+            }
+        }
+        img {
+            @extend %size-logo;
+        }
+        p {
+            margin-top: 10px;
+            color: $color-text;
+            word-wrap: break-word;
+        }
+    }
+    .socialmedia {
+        display: flex;
+        padding: 20px 0;
+        box-sizing: border-box;
+        @media only screen and (max-width: 767px) {
+            padding: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            img {
+                vertical-align: top;
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+                @media only screen and (max-width: 767px) {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    p.copyright {
+        width: 100%;
+        padding: 10px;
+        font-size: $size-font-copyright;
+        text-align: center;
+        color: $color-text;
+    }
+}

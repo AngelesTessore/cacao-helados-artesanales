@@ -1,10 +1,20 @@
+/* Colores */
 $color-bg-light: #011414;
 $color-bg-dark: #011010;
+$color-bg-servicios: #ffffff;
 $color-text: #feebeb;
 $color-hover: #368f96;
 $color-title: #368f96;
+$color-recuadro-servicios: #000000;
 
-$size-font-dsktp-nav: 18px;
+/* Fuente */
+$size-font-dsktp-other: 18px;
 $size-font-dsktp-text: 16px;
 $size-font-tablet-text: 14px;
 $size-font-mobile-text: 14px;
+$size-font-servicios: 10px;
+$size-font-footer: 14px;
+$size-font-copyright: 8px;
+
+/* Bordes */
+$border-servicios: 0.5px solid rgb(54, 143, 150);

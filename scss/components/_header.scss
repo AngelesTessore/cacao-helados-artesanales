@@ -14,7 +14,7 @@ header {
     }
     nav.primera-lista, nav.segunda-lista {
         height: 100%;
-        font-size: $size-font-dsktp-nav;
+        font-size: $size-font-dsktp-other;
         padding: 0 20px;
         box-sizing: border-box;
         display: flex;
@@ -34,7 +34,7 @@ header {
             list-style: none;
             background-color: $color-bg-light;
             border: none;
-            font-size: $size-font-dsktp-nav;
+            font-size: $size-font-dsktp-other;
             padding: 0;
         
             li {
@@ -63,8 +63,7 @@ header {
         display: flex;
         background-color: $color-bg-light;
         img {
-            width: 100px;
-            height: 100px;
+            @extend %size-logo;
         }
     }
     nav.primera-lista {
