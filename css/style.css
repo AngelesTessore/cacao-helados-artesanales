@@ -3,6 +3,7 @@
 /* Colores */
 /* Fuente */
 /* Bordes */
+/* Shadows */
 /* Extends */
 footer, body {
   overflow-x: hidden;
@@ -10,7 +11,7 @@ footer, body {
   width: 100%;
 }
 
-section.ubicacion-mapa, section#servicios .flex-container-servicios .div-servicios, section#servicios, section#nosotros div.flex-container .galeria, section#nosotros div.flex-container, section#nosotros, section.frase-marca, header nav.primera-lista, header nav.segunda-lista, header {
+section#seccion-sabores, section.ubicacion-mapa, section#servicios .flex-container-servicios .div-servicios, section#servicios, section#nosotros div.flex-container .galeria, section#nosotros div.flex-container, section#nosotros, section.frase-marca, header nav.primera-lista, header nav.segunda-lista, header {
   display: flex;
   align-items: center;
 }
@@ -522,5 +523,137 @@ footer p.copyright {
   text-align: center;
   color: #feebeb;
 }
+
+/* Sabores */
+section#seccion-sabores {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 80px 0;
+}
+section#seccion-sabores h2.subtitulo-sabores {
+  padding-bottom: 60px;
+}
+section#seccion-sabores .clasicos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .clasicos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+section#seccion-sabores .clasicos .sabor {
+  width: 35%;
+  height: max-content;
+  text-align: center;
+  line-height: 2;
+  margin: 0 20px;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .clasicos .sabor {
+    width: 50%;
+  }
+}
+section#seccion-sabores .clasicos .sabor h3 {
+  font-size: 20px;
+  color: #feebeb;
+}
+section#seccion-sabores .clasicos .sabor h3:hover {
+  background-color: #feebeb;
+  color: #011414;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .clasicos .sabor h3 {
+    font-size: 18px;
+  }
+}
+section#seccion-sabores .clasicos .sabor .lista-sabores {
+  border-top: 1px solid #368f96;
+  font-size: 16px;
+  color: #feebeb;
+  padding: 20px 0px;
+  margin-bottom: 100px;
+}
+section#seccion-sabores .clasicos .sabor .lista-sabores:hover {
+  box-shadow: 0px 0px 2px 1px #368f96;
+}
+@media only screen and (max-width: 767px) {
+  section#seccion-sabores .clasicos .sabor .lista-sabores {
+    font-size: 14px;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .clasicos .sabor .lista-sabores {
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .ed-limitada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+section#seccion-sabores .ed-limitada .sabor-dos {
+  text-align: center;
+  margin: 0 100px 60px 100px;
+  /*Transición*/
+  transition: all 2s;
+  transition-timing-function: ease-out;
+}
+section#seccion-sabores .ed-limitada .sabor-dos:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .ed-limitada .sabor-dos {
+    width: 60%;
+    margin-bottom: 80px;
+    align-self: center;
+  }
+}
+section#seccion-sabores .ed-limitada .sabor-dos h3 {
+  font-size: 20px;
+  color: #feebeb;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .ed-limitada .sabor-dos h3 {
+    font-size: 18px;
+  }
+}
+section#seccion-sabores .ed-limitada .sabor-dos img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  border: none;
+}
+section#seccion-sabores .ed-limitada .sabor-dos img:hover {
+  box-shadow: 0px 0px 2px 1px #368f96;
+}
+@media only screen and (max-width: 767px) {
+  section#seccion-sabores .ed-limitada .sabor-dos img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section#seccion-sabores .ed-limitada .sabor-dos img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+}
+
+/*@media only screen and (min-width: 768px) and (max-width: 992px)*/
 
 /*# sourceMappingURL=style.css.map */

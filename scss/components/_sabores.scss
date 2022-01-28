@@ -1,0 +1,111 @@
+/* Sabores */
+section#seccion-sabores {
+    @extend %vista-dsktp;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 80px 0;
+    h2.subtitulo-sabores {
+        padding-bottom: 60px;
+    }
+    .clasicos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .sabor {
+            width: 35%;
+            height: max-content;
+            text-align: center;
+            line-height: 2;
+            margin: 0 20px;
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+                width: 50%;
+            }
+            h3 {
+                font-size: 20px;
+                color: $color-text;
+                &:hover {
+                    background-color: $color-text;
+                    color: $color-bg-light;
+                }
+                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+                    font-size: 18px;
+                }
+            }
+            .lista-sabores {
+                border-top: $border-general;
+                font-size: $size-font-dsktp-text;
+                color: $color-text;
+                padding: 20px 0px;
+                margin-bottom: 100px;
+                &:hover {
+                    box-shadow: $shadow;
+                }
+                @media only screen and (max-width: 767px) {
+                    font-size: $size-font-mobile-text;
+                    margin-bottom: 80px;
+                }
+                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                    font-size: $size-font-tablet-text;
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+    .ed-limitada {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        .sabor-dos {
+            text-align: center;
+            margin: 0 100px 60px 100px;
+            /*Transición*/
+            transition: all 2s;
+            transition-timing-function: ease-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+                width: 60%;
+                margin-bottom: 80px;
+                align-self: center;
+            }
+            h3 {
+                font-size: 20px;
+                color: $color-text;
+                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+                    font-size: 18px;
+                }
+            }
+            img {
+                @include img-sizes(90%, auto);
+                object-fit: cover;
+                margin-top: 10px;
+                border: none;
+                &:hover {
+                    box-shadow: $shadow;
+                }
+                @media only screen and (max-width: 767px) {
+                    @include img-sizes(100%, auto);
+                    max-height: 400px;
+                }
+                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                    @include img-sizes(100%, auto);
+                    max-height: 500px;
+                }
+            }
+
+        }
+    }
+}
+/*@media only screen and (min-width: 768px) and (max-width: 992px)*/
