@@ -35,7 +35,6 @@ header {
             border: none;
             font-size: $size-font-dsktp-other;
             padding: 0;
-        
             li {
                 display: inline-flex;
                 padding: 10px 15px;
@@ -76,13 +75,11 @@ header {
     nav.segunda-lista {
         justify-content: flex-end;
         .carrito {
-            width: 25px;
-            height: 25px;
+            @include img-sizes(25px, 25px);
             vertical-align: middle;
             @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
                 display: inline-flex;
-                width: 50px;
-                height: 50px;
+                @include img-sizes(50px, 50px);
             }
         }
         @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {

@@ -1,0 +1,5 @@
+/* Mixins */
+@mixin img-sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}

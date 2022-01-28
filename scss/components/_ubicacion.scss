@@ -32,8 +32,7 @@ section.ubicacion-mapa {
             font-size: $size-font-mobile-text;
             margin-bottom: 60px;
             img {
-                width: 25px;
-                height: 25px;
+                @include img-sizes(25px, 25px);
             }
         }
     }
@@ -45,8 +44,7 @@ section.ubicacion-mapa {
         @media only screen and (min-width: 768px) and (max-width: 992px) {
             width: 50%;
             iframe {
-                width: 100%;
-                height: auto;
+                @include img-sizes (100%, auto);
                 margin: 0px auto;
             }
         }

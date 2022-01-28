@@ -25,6 +25,7 @@ section .fondo-portada {
   margin-right: auto;
 }
 
+/* Mixins */
 /* Components */
 * {
   margin: 0;
