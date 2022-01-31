@@ -1,0 +1,117 @@
+/* Contacto */
+section.contacto {
+    @extend %vista-dsktp;
+    flex-direction: column;
+    padding: 80px 0;
+    .intro-form {
+        padding: 0 0 80px 0;
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            padding: 0 0 60px 0;
+        }
+        p {
+            padding-left: 40px;
+            color: $color-text;
+            text-align: left;
+            line-height: 3.5;
+            font-size: $size-font-dsktp-other;
+            @media only screen and (max-width: 767px) {
+                text-align: center;
+                line-height: 2;
+                font-size: $size-font-mobile-text;
+                padding: 0 40px;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                line-height: 2.5;
+                font-size: $size-font-tablet-text;
+                padding-left: 30px;
+            }
+        }
+    }
+    form {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 100px;
+        text-align: left;
+        @media only screen and (max-width: 767px) {
+            width: 65%;
+            height: auto;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+            width: 60%;
+            height: auto
+        }
+        input[type=text], input[type=email] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 30px 0;
+            font-size: $size-font-form-dsktp;
+            background-color: $color-bg-servicios;
+            border-radius: 10px;
+            border: none;
+            box-sizing: border-box;
+            &:focus {
+                border: $border-form;
+            }
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+                font-size: $size-font-form;
+            }
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: $size-font-form-dsktp;
+            background-color: $color-bg-servicios;
+            border-radius: 10px;
+            border: none;
+            box-sizing: border-box;
+            &:focus {
+                border: $border-form;
+            }
+            @media only screen and (max-width: 767px) {
+                font-size: $size-font-form;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                font-size: $size-font-form-dsktp;
+            }
+        }
+        input[type=submit] {
+            width: 15%;
+            padding: 10px 0;
+            margin: 20px 0 20px 0;
+            text-align: center;
+            font-size: $size-font-dsktp-text;
+            font-weight: bold;
+            background-color: $color-bg-servicios;
+            border-radius: 10px;
+            border: $border-general;
+            box-sizing: border-box;
+            &:hover {
+                background-color: $color-bg-light;
+                color: $color-text;
+            }
+            @media only screen and (max-width: 767px) {
+                width: 25%;
+                font-size: $size-font-mobile-text;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                width: 25%;
+                font-size: $size-font-tablet-text;
+            }
+        }
+        label {
+            color: $color-text;
+            font-size: $size-font-dsktp-text;
+            padding-left: 10px;
+            @media only screen and (max-width: 767px) {
+                font-size: $size-font-mobile-text;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                font-size: $size-font-tablet-text;
+            }
+        }
+        label[for=suscripcion] {
+            padding: 0 10px;
+        }
+    }
+}
