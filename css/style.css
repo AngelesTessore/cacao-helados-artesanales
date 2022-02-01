@@ -99,6 +99,22 @@ h4 {
   }
 }
 
+h3 {
+  font-size: 20px;
+  color: #feebeb;
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
 /* Header */
 header {
   width: 100%;
@@ -561,19 +577,6 @@ section#seccion-sabores .clasicos .sabor {
     width: 50%;
   }
 }
-section#seccion-sabores .clasicos .sabor h3 {
-  font-size: 20px;
-  color: #feebeb;
-}
-section#seccion-sabores .clasicos .sabor h3:hover {
-  background-color: #feebeb;
-  color: #011414;
-}
-@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
-  section#seccion-sabores .clasicos .sabor h3 {
-    font-size: 18px;
-  }
-}
 section#seccion-sabores .clasicos .sabor .lista-sabores {
   border-top: 1px solid #368f96;
   font-size: 16px;
@@ -583,6 +586,8 @@ section#seccion-sabores .clasicos .sabor .lista-sabores {
 }
 section#seccion-sabores .clasicos .sabor .lista-sabores:hover {
   box-shadow: 0px 0px 2px 1px #368f96;
+  background-color: #d1c3b0;
+  color: #011414;
 }
 @media only screen and (max-width: 767px) {
   section#seccion-sabores .clasicos .sabor .lista-sabores {
@@ -621,15 +626,6 @@ section#seccion-sabores .ed-limitada .sabor-dos:hover {
     align-self: center;
   }
 }
-section#seccion-sabores .ed-limitada .sabor-dos h3 {
-  font-size: 20px;
-  color: #feebeb;
-}
-@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
-  section#seccion-sabores .ed-limitada .sabor-dos h3 {
-    font-size: 18px;
-  }
-}
 section#seccion-sabores .ed-limitada .sabor-dos img {
   width: 90%;
   height: auto;
@@ -639,6 +635,7 @@ section#seccion-sabores .ed-limitada .sabor-dos img {
 }
 section#seccion-sabores .ed-limitada .sabor-dos img:hover {
   box-shadow: 0px 0px 2px 1px #368f96;
+  border-radius: 10px 30px 10px 30px;
 }
 @media only screen and (max-width: 767px) {
   section#seccion-sabores .ed-limitada .sabor-dos img {
@@ -703,6 +700,8 @@ section#seccion-productos .productos .bloque .lista-productos {
 }
 section#seccion-productos .productos .bloque .lista-productos:hover {
   box-shadow: 0px 0px 2px 1px #368f96;
+  background-color: #d1c3b0;
+  color: #011414;
 }
 @media only screen and (max-width: 767px) {
   section#seccion-productos .productos .bloque .lista-productos {
@@ -717,6 +716,9 @@ section#seccion-productos .productos .bloque .lista-productos:hover {
 section#seccion-productos .productos .img-costados {
   height: 450px;
   object-fit: cover;
+}
+section#seccion-productos .productos .img-costados:hover {
+  border-radius: 10px 30px 10px 30px;
 }
 @media only screen and (max-width: 767px) {
   section#seccion-productos .productos .img-costados {
@@ -785,6 +787,8 @@ section#novedades-promos .promos {
   border: none;
   margin-bottom: 80px;
   padding: 10px;
+  color: #feebeb;
+  font-size: 16px;
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
   section#novedades-promos .promos {
@@ -792,15 +796,28 @@ section#novedades-promos .promos {
     box-sizing: border-box;
     border-top: 1px solid #368f96;
     border-bottom: 1px solid #368f96;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   section#novedades-promos .promos {
     flex-direction: row;
+    font-size: 16px;
   }
 }
 section#novedades-promos .promos:hover {
   box-shadow: 0px 0px 2px 1px #368f96;
+  background-color: #d1c3b0;
+  color: #011414;
+}
+section#novedades-promos .promos:hover h2 {
+  color: #011414;
+}
+section#novedades-promos .promos:hover a:hover, section#novedades-promos .promos:hover a:link, section#novedades-promos .promos:hover a:visited, section#novedades-promos .promos:hover a:active {
+  color: #011414;
+}
+section#novedades-promos .promos:hover img {
+  border-radius: 10px 30px 10px 30px;
 }
 section#novedades-promos .promos h2 {
   text-align: left;
@@ -814,12 +831,9 @@ section#novedades-promos .promos h2 {
 }
 section#novedades-promos .promos p {
   padding: 20px;
-  font-size: 16px;
-  color: #feebeb;
 }
 @media only screen and (max-width: 767px) {
   section#novedades-promos .promos p {
-    font-size: 14px;
     padding: 20px 10px;
     text-align: center;
     word-wrap: break-word;
@@ -828,15 +842,12 @@ section#novedades-promos .promos p {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   section#novedades-promos .promos p {
     padding: 20px 10px;
-    font-size: 16px;
     text-align: center;
     word-wrap: break-word;
   }
 }
 section#novedades-promos .promos a {
   padding: 20px;
-  font-size: 16px;
-  color: #feebeb;
   text-decoration: none;
   font-weight: bold;
 }
@@ -854,7 +865,6 @@ section#novedades-promos .promos a:active {
 }
 @media only screen and (max-width: 767px) {
   section#novedades-promos .promos a {
-    font-size: 14px;
     padding: 20px 10px;
     text-align: center;
     word-wrap: break-word;
@@ -863,7 +873,6 @@ section#novedades-promos .promos a:active {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   section#novedades-promos .promos a {
     padding: 20px 10px;
-    font-size: 16px;
     text-align: center;
     word-wrap: break-word;
   }

@@ -28,17 +28,6 @@ section#seccion-sabores {
             @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
                 width: 50%;
             }
-            h3 {
-                font-size: map-get($size-h3, size-dsktp-h3);
-                color: $color-text;
-                &:hover {
-                    background-color: $color-text;
-                    color: $color-bg-light;
-                }
-                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
-                    font-size: map-get($size-h3, size-tablet-h3);
-                }
-            }
             .lista-sabores {
                 border-top: $border-general;
                 font-size: $size-font-dsktp-text;
@@ -47,6 +36,8 @@ section#seccion-sabores {
                 margin-bottom: 100px;
                 &:hover {
                     box-shadow: $shadow;
+                    background-color: $color-bg-hover;
+                    color: $color-text-hover;
                 }
                 @media only screen and (max-width: 767px) {
                     font-size: $size-font-mobile-text;
@@ -80,13 +71,6 @@ section#seccion-sabores {
                 margin-bottom: 80px;
                 align-self: center;
             }
-            h3 {
-                font-size: 20px;
-                color: $color-text;
-                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
-                    font-size: 18px;
-                }
-            }
             img {
                 @include img-sizes(90%, auto);
                 object-fit: cover;
@@ -94,6 +78,7 @@ section#seccion-sabores {
                 border: none;
                 &:hover {
                     box-shadow: $shadow;
+                    border-radius: $border-img-hover;
                 }
                 @media only screen and (max-width: 767px) {
                     @include img-sizes(100%, auto);

@@ -14,30 +14,30 @@ body {
 h1 {
     color: $color-title;
     padding: 40px;
-    font-size: 48px;
+    font-size: map-get($size-h1, size-dsktp-h1);
     font-weight: bold;
     text-align: center;
     @media only screen and (max-width: 767px) {
-        font-size: 36px;
+        font-size: map-get($size-h1, size-mobile-h1);
         padding: 30px;
     }
     @media only screen and (min-width: 768px) and (max-width: 992px) {
-        font-size: 40px;
+        font-size: map-get($size-h1, size-tablet-h1);
         padding: 30px;
     }
 }
 
 h2 {
     padding: 20px;
-    font-size: 28px;
+    font-size: map-get($size-h2, size-dsktp-h2);
     text-align: left;
     color: $color-title;
     @media only screen and (max-width: 767px) {
-        font-size: 20px;
+        font-size: map-get($size-h2, size-mobile-h2);
         text-align: center;
     }
     @media only screen and (min-width: 768px) and (max-width: 992px) {
-        font-size: 24px;
+        font-size: map-get($size-h2, size-tablet-h2);
         text-align: center;
     }
 }
@@ -45,15 +45,27 @@ h2 {
 h4 {
     padding-top: 80px;
     padding-bottom: 40px;
-    font-size: 28px;
+    font-size: map-get($size-h4, size-dsktp-h4);
     font-weight: bold;
     color: $color-title;
     @media only screen and (max-width: 767px) {
-        font-size: 20px;
+        font-size: map-get($size-h4, size-mobile-h4);
         padding-top: 60px;
     }
     @media only screen and (min-width: 768px) and (max-width: 992px) {
-        font-size: 24px;
+        font-size: map-get($size-h4, size-tablet-h4);
         padding-top: 60px;
+    }
+}
+
+h3 {
+    font-size: map-get($size-h3, size-dsktp-h3);
+    color: $color-text;
+    font-weight: bold;
+    @media only screen and (max-width: 767px){
+        font-size: map-get($size-h3, size-mobile-h3);
+    }
+    @media only screen and (min-width: 768px) and (max-width: 992px)  {
+        font-size: map-get($size-h3, size-tablet-h3);
     }
 }

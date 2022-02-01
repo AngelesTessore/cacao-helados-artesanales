@@ -36,6 +36,8 @@ section#seccion-productos {
                 color: $color-text;
                 &:hover {
                     box-shadow: $shadow;
+                    background-color: $color-bg-hover;
+                    color: $color-text-hover;
                 }
                 @media only screen and (max-width: 767px) {
                     font-size: $size-font-mobile-text;
@@ -48,6 +50,9 @@ section#seccion-productos {
         .img-costados {
             height: 450px;
             object-fit: cover;
+            &:hover {
+                border-radius: $border-img-hover;
+            }
             @media only screen and (max-width: 767px) {
                 height: auto;
                 max-height: 300px;

@@ -15,17 +15,32 @@ section#novedades-promos {
         border: none;
         margin-bottom: 80px;
         padding: 10px;
+        color: $color-text;
+        font-size: $size-font-dsktp-text;
         @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
             height: max-content;
             box-sizing: border-box;
             border-top: $border-general;
             border-bottom: $border-general;
+            font-size: $size-font-mobile-text;
         }
         @media only screen and (min-width: 768px) and (max-width: 992px) {
             flex-direction: row;
+            font-size: $size-font-tablet-text;
         }
         &:hover {
             box-shadow: $shadow;
+            background-color: $color-bg-hover;
+            color: $color-text-hover;
+            h2 {
+                color: $color-text-hover;
+            }
+            a:hover, a:link, a:visited, a:active {
+                color: $color-text-hover;
+            }
+            img {
+                border-radius: $border-img-hover;
+            }
         }
         h2 {
             text-align: left;
@@ -37,25 +52,19 @@ section#novedades-promos {
         }
         p {
             padding: 20px;
-            font-size: $size-font-dsktp-text;
-            color: $color-text;
             @media only screen and (max-width: 767px) {
-                font-size: $size-font-mobile-text;
                 padding: 20px 10px;
                 text-align: center;
                 word-wrap: break-word;
             }
             @media only screen and (min-width: 768px) and (max-width: 992px) {
                 padding: 20px 10px;
-                font-size: $size-font-dsktp-text;
                 text-align: center;
                 word-wrap: break-word;
             }
         }
         a {
             padding: 20px;
-            font-size: $size-font-dsktp-text;
-            color: $color-text;
             text-decoration: none;
             font-weight: bold;
             &:link {
@@ -71,14 +80,12 @@ section#novedades-promos {
                 color: $color-text;
             }
             @media only screen and (max-width: 767px) {
-                font-size: $size-font-mobile-text;
                 padding: 20px 10px;
                 text-align: center;
                 word-wrap: break-word;
             }
             @media only screen and (min-width: 768px) and (max-width: 992px) {
                 padding: 20px 10px;
-                font-size: $size-font-dsktp-text;
                 text-align: center;
                 word-wrap: break-word;
             }
