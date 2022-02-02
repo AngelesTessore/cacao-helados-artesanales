@@ -62,6 +62,7 @@ header {
         background-color: $color-bg-light;
         img {
             @extend %size-logo;
+            @extend %center-img;
         }
     }
     nav.primera-lista {

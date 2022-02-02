@@ -21,6 +21,11 @@ footer .div-footer img, header .logo img {
   height: 100px;
 }
 
+header .logo img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Mixins */
 /* Maps */
 /* Components */
@@ -310,6 +315,9 @@ section#nosotros div.flex-container .galeria .carousel-item img {
   section#nosotros div.flex-container .galeria .carousel-item img {
     height: auto;
   }
+}
+section#nosotros div.flex-container .galeria .hide-icon {
+  z-index: 0;
 }
 section#nosotros div.flex-container .galeria-mobile {
   width: 75%;

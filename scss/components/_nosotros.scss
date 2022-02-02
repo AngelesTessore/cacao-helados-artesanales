@@ -56,7 +56,10 @@ section#nosotros {
                 @media only screen and (min-width: 768px) and (max-width: 992px) {
                     height: auto;
                 }
-            }    
+            } 
+            .hide-icon {
+                z-index: 0;
+            }   
         }
         .galeria-mobile {
             width: 75%;
