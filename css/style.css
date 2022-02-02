@@ -21,11 +21,6 @@ footer .div-footer img, header .logo img {
   height: 100px;
 }
 
-section .fondo-portada {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Mixins */
 /* Maps */
 /* Components */
@@ -756,17 +751,17 @@ section .pedidos .icono-pedidos {
   }
 }
 section .pedidos p {
-  font-size: 20px;
+  font-size: 18px;
   color: #feebeb;
 }
 @media only screen and (max-width: 767px) {
   section .pedidos p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   section .pedidos p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

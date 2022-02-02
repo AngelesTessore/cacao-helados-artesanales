@@ -84,13 +84,13 @@ section {
             }
         }
         p {
-            font-size: 20px;
+            font-size: $size-font-dsktp-otros;
             color: $color-text;
             @media only screen and (max-width: 767px) {
-                font-size: 16px;
+                font-size: $size-font-mobile-text;
             }
             @media only screen and (min-width: 768px) and (max-width: 992px) {
-                font-size: 18px;
+                font-size: $size-font-tablet-text;
             }
         }
     }

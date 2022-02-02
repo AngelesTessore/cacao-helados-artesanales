@@ -14,7 +14,7 @@ header {
     }
     nav.primera-lista, nav.segunda-lista {
         height: 100%;
-        font-size: $size-font-dsktp-other;
+        font-size: $size-font-dsktp-otros;
         padding: 0 20px;
         box-sizing: border-box;
         width: 45%;
@@ -33,7 +33,7 @@ header {
             list-style: none;
             background-color: $color-bg-light;
             border: none;
-            font-size: $size-font-dsktp-other;
+            font-size: $size-font-dsktp-otros;
             padding: 0;
             li {
                 display: inline-flex;

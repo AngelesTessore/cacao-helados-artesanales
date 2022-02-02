@@ -23,7 +23,7 @@ section#servicios {
             width: 40%;
             margin: 10px 0;
             border: $border-servicios;
-            background-color: $color-bg-servicios;
+            background-color: $color-bg-otros;
             @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
                 width: 75%;
                 box-sizing: border-box;
@@ -37,7 +37,7 @@ section#servicios {
             }
             p.recuadro {
                 font-size: $size-font-servicios;
-                color: $color-recuadro-servicios;
+                color: $color-recuadro-otros;
                 padding: 10px 5px;
                 margin: 0;
                 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
