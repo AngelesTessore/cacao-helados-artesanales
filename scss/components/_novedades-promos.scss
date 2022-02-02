@@ -17,14 +17,14 @@ section#novedades-promos {
         padding: 10px;
         color: $color-text;
         font-size: $size-font-dsktp-text;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             height: max-content;
             box-sizing: border-box;
             border-top: $border-general;
             border-bottom: $border-general;
             font-size: $size-font-mobile-text;
         }
-        @media only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
             flex-direction: row;
             font-size: $size-font-tablet-text;
         }
@@ -45,7 +45,7 @@ section#novedades-promos {
         h2 {
             text-align: left;
             color: $color-text;
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 text-align: center;
                 padding: 10px;
             }
@@ -57,7 +57,7 @@ section#novedades-promos {
                 text-align: center;
                 word-wrap: break-word;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 padding: 20px 10px;
                 text-align: center;
                 word-wrap: break-word;
@@ -84,7 +84,7 @@ section#novedades-promos {
                 text-align: center;
                 word-wrap: break-word;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 padding: 20px 10px;
                 text-align: center;
                 word-wrap: break-word;
@@ -98,13 +98,13 @@ section#novedades-promos {
                 max-height: 210px;
                 padding: 10px 0;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 height: auto;
                 max-height: 320px;
                 padding: 10px 0;
             }
         }
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             .custom-link {
                 text-align: center;
                 padding: 10px 0;

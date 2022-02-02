@@ -5,7 +5,7 @@ section.contacto {
     padding: 80px 0;
     .intro-form {
         padding: 0 0 80px 0;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             padding: 0 0 60px 0;
         }
         p {
@@ -20,7 +20,7 @@ section.contacto {
                 font-size: $size-font-mobile-text;
                 padding: 0 40px;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 line-height: 2.5;
                 font-size: $size-font-tablet-text;
                 padding-left: 30px;
@@ -36,7 +36,7 @@ section.contacto {
             width: 65%;
             height: auto;
         }
-        @media only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
             width: 60%;
             height: auto
         }
@@ -52,7 +52,7 @@ section.contacto {
             &:focus {
                 border: $border-form;
             }
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 font-size: $size-font-form;
             }
         }
@@ -71,7 +71,7 @@ section.contacto {
             @media only screen and (max-width: 767px) {
                 font-size: $size-font-form;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 font-size: $size-font-form-dsktp;
             }
         }
@@ -94,7 +94,7 @@ section.contacto {
                 width: 25%;
                 font-size: $size-font-mobile-text;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 width: 25%;
                 font-size: $size-font-tablet-text;
             }
@@ -106,7 +106,7 @@ section.contacto {
             @media only screen and (max-width: 767px) {
                 font-size: $size-font-mobile-text;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 font-size: $size-font-tablet-text;
             }
         }

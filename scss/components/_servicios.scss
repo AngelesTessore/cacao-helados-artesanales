@@ -4,7 +4,7 @@ section#servicios {
     flex-direction: column;
     width: 100%;
     padding: 100px 0;
-    @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+    @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
         padding: 60px 0;
     }
     .flex-container-servicios {
@@ -13,7 +13,7 @@ section#servicios {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             flex-direction: column;
             flex-wrap: nowrap;
             align-items: center;
@@ -24,14 +24,14 @@ section#servicios {
             margin: 10px 0;
             border: $border-servicios;
             background-color: $color-bg-otros;
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 width: 75%;
                 box-sizing: border-box;
             }
             img {
                 @include img-sizes(60px, 60px);
                 padding: 10px;
-                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                     @include img-sizes(50px, 50px);
                 }
             }
@@ -40,7 +40,7 @@ section#servicios {
                 color: $color-recuadro-otros;
                 padding: 10px 5px;
                 margin: 0;
-                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+                @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                     padding: 10px;
                 }
                 a {

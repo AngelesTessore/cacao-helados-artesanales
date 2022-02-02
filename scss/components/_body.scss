@@ -21,7 +21,7 @@ h1 {
         font-size: map-get($size-h1, size-mobile-h1);
         padding: 30px;
     }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
         font-size: map-get($size-h1, size-tablet-h1);
         padding: 30px;
     }
@@ -36,7 +36,7 @@ h2 {
         font-size: map-get($size-h2, size-mobile-h2);
         text-align: center;
     }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
         font-size: map-get($size-h2, size-tablet-h2);
         text-align: center;
     }
@@ -52,7 +52,7 @@ h4 {
         font-size: map-get($size-h4, size-mobile-h4);
         padding-top: 60px;
     }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
         font-size: map-get($size-h4, size-tablet-h4);
         padding-top: 60px;
     }
@@ -65,7 +65,7 @@ h3 {
     @media only screen and (max-width: 767px){
         font-size: map-get($size-h3, size-mobile-h3);
     }
-    @media only screen and (min-width: 768px) and (max-width: 992px)  {
+    @media only screen and (min-width: 768px) and (max-width: 991px)  {
         font-size: map-get($size-h3, size-tablet-h3);
     }
 }

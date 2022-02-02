@@ -15,7 +15,7 @@ section#seccion-sabores {
         justify-content: space-around;
         align-items: flex-start;
         width: 100%;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             flex-direction: column;
             align-items: center;
         }
@@ -25,7 +25,7 @@ section#seccion-sabores {
             text-align: center;
             line-height: 2;
             margin: 0 20px;
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 width: 50%;
             }
             .lista-sabores {
@@ -43,7 +43,7 @@ section#seccion-sabores {
                     font-size: $size-font-mobile-text;
                     margin-bottom: 80px;
                 }
-                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
                     font-size: $size-font-tablet-text;
                     margin-bottom: 80px;
                 }
@@ -51,7 +51,7 @@ section#seccion-sabores {
         }
     }
     .ed-limitada {
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -66,7 +66,7 @@ section#seccion-sabores {
             &:hover {
                 transform: scale(1.1);
             }
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 width: 60%;
                 margin-bottom: 80px;
                 align-self: center;
@@ -84,7 +84,7 @@ section#seccion-sabores {
                     @include img-sizes(100%, auto);
                     max-height: 400px;
                 }
-                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
                     @include img-sizes(100%, auto);
                     max-height: 500px;
                 }

@@ -3,7 +3,7 @@ section#seccion-productos {
     padding: 80px 0;
     h1.principal {
         padding-bottom: 80px;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             padding-bottom: 30px;
         }
     }
@@ -11,13 +11,13 @@ section#seccion-productos {
         width: 100%;
         height: 550px;
         margin-bottom: 60px;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             height: auto;
         }
         .bloque {
             line-height: 2;
             margin: 0px 40px;
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 margin: 40px 0;
                 line-height: 1.5;
             }
@@ -42,7 +42,7 @@ section#seccion-productos {
                 @media only screen and (max-width: 767px) {
                     font-size: $size-font-mobile-text;
                 }
-                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
                     font-size: $size-font-tablet-text;
                 }
             }
@@ -57,7 +57,7 @@ section#seccion-productos {
                 height: auto;
                 max-height: 300px;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 height: auto;
                 max-height: 450px;
             }
@@ -79,7 +79,7 @@ section {
         .icono-pedidos {
             @include img-sizes (80px, 80px);
             align-self: center;
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 @include img-sizes (50px, 50px);
             }
         }
@@ -89,7 +89,7 @@ section {
             @media only screen and (max-width: 767px) {
                 font-size: $size-font-mobile-text;
             }
-            @media only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
                 font-size: $size-font-tablet-text;
             }
         }

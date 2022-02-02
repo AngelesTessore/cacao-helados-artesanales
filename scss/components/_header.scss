@@ -9,7 +9,7 @@ header {
     top: 0;
     z-index: 1;
     background-color: $color-bg-light;
-    @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+    @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
         justify-content: space-around;
     }
     nav.primera-lista, nav.segunda-lista {
@@ -67,7 +67,7 @@ header {
     }
     nav.primera-lista {
         justify-content: flex-start;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             li.borde-inferior {
             border-bottom: $border-general;
             }
@@ -78,12 +78,12 @@ header {
         .carrito {
             @include img-sizes(25px, 25px);
             vertical-align: middle;
-            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 display: inline-flex;
                 @include img-sizes(50px, 50px);
             }
         }
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             li.no-show-list {
                 display: none;
             }
