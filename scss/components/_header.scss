@@ -25,9 +25,18 @@ header {
         }
         .navbar-toggler-icon {
             background-image: url('../images/icono-menu.png');
-            width: 40px;
-            height: 40px;
+            @include img-sizes(40px, 40px);
             }
+        .custom-offcanvas {
+            background-color: $color-bg-light;
+            .offcanvas-menu {
+                color: $color-text;
+                font-weight: bold;
+            }
+            .close-menu {
+                background-image: url('../images/icono-close.png');
+            }
+        }
         ul {
             flex-wrap: wrap;
             list-style: none;

@@ -1,4 +1,7 @@
 /* Novedades-Promos */
+.nov-portada {
+    @extend %img-portada;
+}
 section#novedades-promos {
     @extend %vista-dsktp;
     width: 80%;
@@ -37,9 +40,6 @@ section#novedades-promos {
             }
             a:hover, a:link, a:visited, a:active {
                 color: $color-text-hover;
-            }
-            img {
-                border-radius: $border-img-hover;
             }
         }
         h2 {
@@ -93,6 +93,7 @@ section#novedades-promos {
         img {
             height: auto;
             object-fit: cover;
+            border-radius: $border-img;
             @media only screen and (max-width: 767px) {
                 height: auto;
                 max-height: 210px;

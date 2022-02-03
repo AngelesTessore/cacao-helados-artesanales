@@ -35,29 +35,37 @@
         <!-- Bootstrap Nav -->
         <nav class="navbar navbar-expand-lg navbar-dark primera-lista">
             <div>
-                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 dropdown-menu dropdown-menu-end custom-dropdown">
-                        <li class="borde-inferior">
-                            <a class="active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="borde-inferior">
-                            <a href="sabores.html">Sabores</a>
-                        </li>
-                        <li class="borde-inferior">
-                            <a href="productos.html">Productos</a>
-                        </li>
-                        <li class="borde-inferior">
-                            <a href="novedades-promos.html">Novedades/Promos</a>
-                        </li>
-                        <li class="borde-inferior d-lg-none d-inline-flex">
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title offcanvas-menu" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close text-reset close-menu" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body align-items-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 dropdown-menu dropdown-menu-end">
+                            <li class="borde-inferior">
+                                <a class="active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="borde-inferior">
+                                <a href="sabores.html">Sabores</a>
+                            </li>
+                            <li class="borde-inferior">
+                                <a href="productos.html">Productos</a>
+                            </li>
+                            <li class="borde-inferior">
+                                <a href="novedades-promos.html">Novedades/Promos</a>
+                            </li>
+                            <li class="borde-inferior d-lg-none d-inline-flex">
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -74,6 +82,16 @@
             </ul>
         </nav>
     </header>
+    <!-- Portada -->
+    <section>
+        <img class="sabores-portada"
+        srcset="images/sabores-portada-640.jpg 640w,
+        images/sabores-portada.jpg 1280w,
+        images/sabores-portada-1920.jpg 1920w"
+        src="images/sabores-portada.jpg"
+        sizes="100vw"
+        alt="Imagen ilustrativa - Vista superior de helado chocolate">
+    </section>
     <!-- Nuestros Sabores -->
     <section id="seccion-sabores">
         <h1>Nuestros Sabores</h1>

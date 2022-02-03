@@ -1,4 +1,7 @@
 /* Sabores */
+.sabores-portada {
+    @extend %img-portada;
+}
 section#seccion-sabores {
     @extend %vista-dsktp;
     flex-direction: column;
@@ -61,24 +64,25 @@ section#seccion-sabores {
             text-align: center;
             margin: 0 100px 60px 100px;
             /*Transición*/
-            transition: all 2s;
-            transition-timing-function: ease-out;
+            transition: all 1s ease-out;
             &:hover {
-                transform: scale(1.1);
-            }
+                    transform: scale(1.1);
+                }
             @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 width: 60%;
                 margin-bottom: 80px;
+                margin-top: 20px;
                 align-self: center;
             }
             img {
                 @include img-sizes(90%, auto);
+                max-height: 500px;
                 object-fit: cover;
                 margin-top: 10px;
                 border: none;
+                border-radius: $border-img;
                 &:hover {
                     box-shadow: $shadow;
-                    border-radius: $border-img-hover;
                 }
                 @media only screen and (max-width: 767px) {
                     @include img-sizes(100%, auto);
@@ -86,7 +90,7 @@ section#seccion-sabores {
                 }
                 @media only screen and (min-width: 768px) and (max-width: 991px) {
                     @include img-sizes(100%, auto);
-                    max-height: 500px;
+                    max-height: 450px;
                 }
             }
 
