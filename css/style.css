@@ -147,6 +147,16 @@ header nav.primera-lista .navbar-toggler-icon, header nav.segunda-lista .navbar-
   width: 40px;
   height: 40px;
 }
+header nav.primera-lista .custom-offcanvas, header nav.segunda-lista .custom-offcanvas {
+  background-color: #011414;
+}
+header nav.primera-lista .custom-offcanvas .offcanvas-menu, header nav.segunda-lista .custom-offcanvas .offcanvas-menu {
+  color: #feebeb;
+  font-weight: bold;
+}
+header nav.primera-lista .custom-offcanvas .close-menu, header nav.segunda-lista .custom-offcanvas .close-menu {
+  background-image: url("../images/icono-close.png");
+}
 header nav.primera-lista ul, header nav.segunda-lista ul {
   flex-wrap: wrap;
   list-style: none;

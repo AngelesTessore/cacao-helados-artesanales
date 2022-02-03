@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Descripción del sitio -->
-    <meta name="description" content="Somos una heladería artesanal de Rosario. Aquí encontrarán información sobre nosotros y nuestros productos y servicios. Podrán hacer pedidos directamente y contactarse por cualquier consulta.">
+    <meta name="description"
+        content="Somos una heladería artesanal de Rosario. Aquí encontrarán información sobre nosotros y nuestros productos y servicios. Podrán hacer pedidos directamente y contactarse por cualquier consulta.">
     <!-- Keywords -->
-    <meta name="keywords" content="HELADOS, ARTESANAL, CACAO, POSTRES, COMIDA, EMPRESA FAMILIAR, ROSARIO, EXCELENCIA, CALIDAD, COMPROMISO, PASIÓN.">
-    
+    <meta name="keywords"
+        content="HELADOS, ARTESANAL, CACAO, POSTRES, COMIDA, EMPRESA FAMILIAR, ROSARIO, EXCELENCIA, CALIDAD, COMPROMISO, PASIÓN.">
+
     <!-- Normalize CSS-->
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -28,35 +30,44 @@
 
     <title>Cacao Helados Artesanales</title>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <!-- Bootstrap Nav -->
         <nav class="navbar navbar-expand-lg navbar-dark primera-lista">
             <div>
-                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 dropdown-menu dropdown-menu-end custom-dropdown">
-                        <li class="borde-inferior">
-                            <a class="active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="borde-inferior">
-                            <a href="sabores.html">Sabores</a>
-                        </li>
-                        <li class="borde-inferior">
-                            <a href="productos.html">Productos</a>
-                        </li>
-                        <li class="borde-inferior">
-                            <a href="novedades-promos.html">Novedades/Promos</a>
-                        </li>
-                        <li class="borde-inferior d-lg-none d-inline-flex">
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title offcanvas-menu" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close text-reset close-menu" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body align-items-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 dropdown-menu dropdown-menu-end">
+                            <li class="borde-inferior">
+                                <a class="active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="borde-inferior">
+                                <a href="sabores.html">Sabores</a>
+                            </li>
+                            <li class="borde-inferior">
+                                <a href="productos.html">Productos</a>
+                            </li>
+                            <li class="borde-inferior">
+                                <a href="novedades-promos.html">Novedades/Promos</a>
+                            </li>
+                            <li class="borde-inferior d-lg-none d-inline-flex">
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -75,13 +86,10 @@
     </header>
     <!-- Portada -->
     <section>
-        <img class="fondo-portada"
-        srcset="images/index-portada-440.jpg 440w,
+        <img class="fondo-portada" srcset="images/index-portada-440.jpg 440w,
         images/index-portada-640.jpg 640w,
         images/index-portada-1280.jpg 1280w,
-        images/index-portada.jpg 1920w"
-        src="images/index-portada.jpg"
-        sizes="100vw"
+        images/index-portada.jpg 1920w" src="images/index-portada.jpg" sizes="100vw"
             alt="Imagen ilustrativa de la empresa - Conos de helado">
     </section>
     <!-- Frase marca -->
@@ -118,16 +126,19 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/index-mostrador-sabores.jpg" alt="Mostrador y variedad de gustos">
+                            <img class="d-block w-100" src="images/index-mostrador-sabores.jpg"
+                                alt="Mostrador y variedad de gustos">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="images/index-despacho.jpg" alt="Bochas de helado">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/index-heladero.jpg" alt="Heladero sirviendo cucurucho">
+                            <img class="d-block w-100" src="images/index-heladero.jpg"
+                                alt="Heladero sirviendo cucurucho">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/index-postres-chocolate.jpg" alt="Vasitos con mousse de chocolate">
+                            <img class="d-block w-100" src="images/index-postres-chocolate.jpg"
+                                alt="Vasitos con mousse de chocolate">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="images/index-paletas-mostrador.jpg"
@@ -138,14 +149,16 @@
                                 alt="Sabor helado primer plano">
                         </div>
                     </div>
-                    <button class="carousel-control-prev hide-icon" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <button class="carousel-control-prev hide-icon" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next hide-icon" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    </button>
+                    <button class="carousel-control-next hide-icon" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                      </button>
+                    </button>
                 </div>
             </div>
             <!-- Galeria - sólo para versión Mobile -->
@@ -213,7 +226,7 @@
     <footer class="container-fluid">
         <div class="row align-items-center justify-content-around">
             <div class="col-12 col-lg-2 align-self-start div-footer">
-            <img src="images/logo-negocio.png" alt="Logo Cacao Helados Artesanales">
+                <img src="images/logo-negocio.png" alt="Logo Cacao Helados Artesanales">
             </div>
             <div class="col-12 col-lg-2 align-self-start div-footer">
                 <a href="#nosotros">Nosotros</a>
@@ -264,4 +277,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
