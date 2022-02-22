@@ -45,17 +45,11 @@ section#servicios {
                 }
                 a {
                     text-decoration: none;
-                    &:link {
-                        color:$color-hover;
-                    }
-                    &:visited {
-                        color:$color-hover;
-                    }
-                    &:active {
-                        color:$color-hover;
+                    &:link, &:visited,  &:active,  &:hover  {
+                        color:$color-text-hover;
                     }
                     &:hover {
-                        color:$color-hover;
+                        font-weight: bold;
                     }
                 }
             }

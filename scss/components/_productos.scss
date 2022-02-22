@@ -41,6 +41,7 @@ section#seccion-productos {
                     box-shadow: $shadow;
                     background-color: $color-bg-hover;
                     color: $color-text-hover;
+                    border-radius: $border-boxtext;
                 }
                 @media only screen and (max-width: 767px) {
                     font-size: $size-font-mobile-text;
@@ -75,7 +76,7 @@ section {
         /* Transición */
         transition: all 1s;
         &:hover {
-            transform:scale(1.5);
+            transform:scale(1.2);
         }
         .icono-pedidos {
             @include img-sizes (80px, 80px);

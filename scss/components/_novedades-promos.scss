@@ -20,6 +20,8 @@ section#novedades-promos {
         padding: 10px;
         color: $color-text;
         font-size: $size-font-dsktp-text;
+        border-top: $border-general;
+        border-bottom: $border-general;
         @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             height: max-content;
             box-sizing: border-box;
@@ -35,6 +37,7 @@ section#novedades-promos {
             box-shadow: $shadow;
             background-color: $color-bg-hover;
             color: $color-text-hover;
+            border-radius: $border-boxtext;
             h2 {
                 color: $color-text-hover;
             }

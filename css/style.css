@@ -179,17 +179,13 @@ header nav.primera-lista ul li, header nav.segunda-lista ul li {
 header nav.primera-lista ul li a, header nav.segunda-lista ul li a {
   text-decoration: none;
 }
-header nav.primera-lista ul li a:link, header nav.segunda-lista ul li a:link {
-  color: #feebeb;
-}
-header nav.primera-lista ul li a:visited, header nav.segunda-lista ul li a:visited {
-  color: #feebeb;
-}
-header nav.primera-lista ul li a:active, header nav.segunda-lista ul li a:active {
+header nav.primera-lista ul li a:link, header nav.primera-lista ul li a:visited, header nav.primera-lista ul li a:active, header nav.segunda-lista ul li a:link, header nav.segunda-lista ul li a:visited, header nav.segunda-lista ul li a:active {
   color: #feebeb;
 }
 header nav.primera-lista ul li a:hover, header nav.segunda-lista ul li a:hover {
   color: #368f96;
+  font-weight: bold;
+  transform: scale(1.1);
 }
 header .logo {
   display: flex;
@@ -210,6 +206,9 @@ header nav.segunda-lista .carrito {
   width: 25px;
   height: 25px;
   vertical-align: middle;
+}
+header nav.segunda-lista .carrito:hover {
+  filter: opacity(0.6);
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   header nav.segunda-lista .carrito {
@@ -409,17 +408,11 @@ section#servicios .flex-container-servicios .div-servicios p.recuadro {
 section#servicios .flex-container-servicios .div-servicios p.recuadro a {
   text-decoration: none;
 }
-section#servicios .flex-container-servicios .div-servicios p.recuadro a:link {
-  color: #368f96;
-}
-section#servicios .flex-container-servicios .div-servicios p.recuadro a:visited {
-  color: #368f96;
-}
-section#servicios .flex-container-servicios .div-servicios p.recuadro a:active {
-  color: #368f96;
+section#servicios .flex-container-servicios .div-servicios p.recuadro a:link, section#servicios .flex-container-servicios .div-servicios p.recuadro a:visited, section#servicios .flex-container-servicios .div-servicios p.recuadro a:active, section#servicios .flex-container-servicios .div-servicios p.recuadro a:hover {
+  color: #011414;
 }
 section#servicios .flex-container-servicios .div-servicios p.recuadro a:hover {
-  color: #368f96;
+  font-weight: bold;
 }
 
 /* Ubicación */
@@ -462,6 +455,7 @@ section.ubicacion-mapa .no-show-div {
     width: 30%;
     color: #feebeb;
     font-size: 14px;
+    text-align: center;
     margin-bottom: 60px;
   }
   section.ubicacion-mapa .no-show-div img {
@@ -507,13 +501,7 @@ footer .div-footer a {
   margin-top: 10px;
   text-decoration: none;
 }
-footer .div-footer a:link {
-  color: #feebeb;
-}
-footer .div-footer a:visited {
-  color: #feebeb;
-}
-footer .div-footer a:active {
+footer .div-footer a:link, footer .div-footer a:visited, footer .div-footer a:active {
   color: #feebeb;
 }
 footer .div-footer a:hover {
@@ -548,6 +536,9 @@ footer .socialmedia a img {
   width: 30px;
   height: 30px;
   margin: 5px;
+}
+footer .socialmedia a img:hover {
+  filter: opacity(0.6);
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   footer .socialmedia a img {
@@ -609,6 +600,7 @@ section#seccion-sabores .clasicos .sabor .lista-sabores:hover {
   box-shadow: 0px 0px 2px 1px #368f96;
   background-color: #d1c3b0;
   color: #011414;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 767px) {
   section#seccion-sabores .clasicos .sabor .lista-sabores {
@@ -724,6 +716,7 @@ section#seccion-productos .productos .bloque .lista-productos:hover {
   box-shadow: 0px 0px 2px 1px #368f96;
   background-color: #d1c3b0;
   color: #011414;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 767px) {
   section#seccion-productos .productos .bloque .lista-productos {
@@ -762,7 +755,7 @@ section .pedidos {
   transition: all 1s;
 }
 section .pedidos:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 section .pedidos .icono-pedidos {
   width: 80px;
@@ -809,6 +802,8 @@ section#novedades-promos .promos {
   padding: 10px;
   color: #feebeb;
   font-size: 16px;
+  border-top: 1px solid #368f96;
+  border-bottom: 1px solid #368f96;
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   section#novedades-promos .promos {
@@ -829,6 +824,7 @@ section#novedades-promos .promos:hover {
   box-shadow: 0px 0px 2px 1px #368f96;
   background-color: #d1c3b0;
   color: #011414;
+  border-radius: 10px;
 }
 section#novedades-promos .promos:hover h2 {
   color: #011414;
