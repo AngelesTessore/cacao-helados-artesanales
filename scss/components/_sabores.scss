@@ -62,39 +62,47 @@ section#seccion-sabores {
             overflow: hidden;
         }
         .sabor-dos {
+            background-color: $color-bg-dark;
             text-align: center;
+            align-items: center;
+            border: none;
             margin: 0 100px 60px 100px;
-            /*Transición*/
-            transition: all 1s ease-out;
-            &:hover {
-                    transform: scale(1.1);
-                }
             @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 width: 60%;
-                margin-bottom: 80px;
+                margin-bottom: 40px;
                 margin-top: 20px;
                 align-self: center;
             }
             img {
                 @include img-sizes(90%, auto);
-                max-height: 500px;
+                max-height: 400px;
                 object-fit: cover;
-                margin-top: 10px;
+                margin: 10px 0px;
                 border: none;
                 border-radius: $border-img;
+                transition: all 1s ease-out;
                 &:hover {
-                    box-shadow: $shadow;
+                    transform: scale(1.1);
                 }
                 @media only screen and (max-width: 767px) {
                     @include img-sizes(100%, auto);
-                    max-height: 400px;
+                    max-height: 300px;
                 }
                 @media only screen and (min-width: 768px) and (max-width: 991px) {
                     @include img-sizes(100%, auto);
-                    max-height: 450px;
+                    max-height: 350px;
                 }
             }
-
+            p {
+                font-size: $size-font-dsktp-text;
+                color: $color-text;
+                @media only screen and (max-width: 767px) {
+                    font-size: $size-font-mobile-text;
+                }
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
+                    font-size: $size-font-tablet-text;
+                }
+            }
         }
     }
 }
