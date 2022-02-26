@@ -4,12 +4,6 @@
 }
 section#seccion-productos {
     padding: 80px 0;
-    h1.principal {
-        padding-bottom: 80px;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
-            padding-bottom: 30px;
-        }
-    }
     .productos {
         width: 100%;
         height: 550px;
@@ -18,10 +12,10 @@ section#seccion-productos {
             height: auto;
         }
         .bloque {
-            line-height: 2;
             margin: 0px 40px;
+            line-height: 2;
             @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
-                margin: 40px 0;
+                margin: 40px 0px;
                 line-height: 1.5;
             }
             h2 {
@@ -31,10 +25,10 @@ section#seccion-productos {
             .lista-productos {
                 text-align: center;
                 vertical-align: middle;
+                padding: 20px 0px;
                 font-size: $size-font-dsktp-text;
                 border-top: $border-general;
                 border-bottom: $border-general;
-                padding: 20px 0px;
                 color: $color-text;
                 &:hover {
                     box-shadow: $shadow;
@@ -71,7 +65,7 @@ section {
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        margin: 60px 0;
+        margin: 20px 0px 60px 0px;
         /* Transición */
         transition: all 1s;
         &:hover {

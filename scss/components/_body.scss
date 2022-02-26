@@ -12,7 +12,7 @@ body {
 /* Headings - Aplica a todos los html */
 h1 {
     font-size: map-get($size-h1, size-dsktp-h1);
-    padding: 40px;
+    padding: 40px 40px 80px 40px;
     font-weight: bold;
     text-align: center;
     color: $color-title;

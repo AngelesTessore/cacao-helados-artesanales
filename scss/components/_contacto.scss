@@ -48,7 +48,6 @@ section.contacto {
             background-color: $color-bg-otros;
             border-radius: 10px;
             border: none;
-            box-sizing: border-box;
             &:focus {
                 border: $border-form;
             }
@@ -64,7 +63,6 @@ section.contacto {
             background-color: $color-bg-otros;
             border-radius: 10px;
             border: none;
-            box-sizing: border-box;
             &:focus {
                 border: $border-form;
             }
@@ -86,7 +84,6 @@ section.contacto {
             color: $color-text;
             border-radius: 10px;
             border: $border-general;
-            box-sizing: border-box;
             &:hover {
                 background-color: $color-bg-hover;
                 color: $color-text-hover;

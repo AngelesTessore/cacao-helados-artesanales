@@ -18,19 +18,18 @@ section#novedades-promos {
         border: none;
         margin-bottom: 80px;
         padding: 10px;
+        box-sizing: border-box;
         color: $color-text;
         font-size: $size-font-dsktp-text;
         border-top: $border-general;
         border-bottom: $border-general;
-        @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+        @media only screen and (max-width: 767px) {
             height: max-content;
-            box-sizing: border-box;
-            border-top: $border-general;
-            border-bottom: $border-general;
             font-size: $size-font-mobile-text;
         }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
             flex-direction: row;
+            height: max-content;
             font-size: $size-font-tablet-text;
         }
         &:hover {
@@ -46,7 +45,6 @@ section#novedades-promos {
             }
         }
         h2 {
-            text-align: left;
             color: $color-text;
             @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 text-align: center;
@@ -55,12 +53,7 @@ section#novedades-promos {
         }
         p {
             padding: 20px;
-            @media only screen and (max-width: 767px) {
-                padding: 20px 10px;
-                text-align: center;
-                word-wrap: break-word;
-            }
-            @media only screen and (min-width: 768px) and (max-width: 991px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 padding: 20px 10px;
                 text-align: center;
                 word-wrap: break-word;
@@ -70,24 +63,10 @@ section#novedades-promos {
             padding: 20px;
             text-decoration: none;
             font-weight: bold;
-            &:link {
+            &:link, &:visited, &:hover, &:active {
                 color: $color-text;
             }
-            &:visited {
-                color: $color-text;
-            }
-            &:hover {
-                color: $color-text;
-            }
-            &:active {
-                color: $color-text;
-            }
-            @media only screen and (max-width: 767px) {
-                padding: 20px 10px;
-                text-align: center;
-                word-wrap: break-word;
-            }
-            @media only screen and (min-width: 768px) and (max-width: 991px) {
+            @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
                 padding: 20px 10px;
                 text-align: center;
                 word-wrap: break-word;
@@ -98,12 +77,10 @@ section#novedades-promos {
             object-fit: cover;
             border-radius: $border-img;
             @media only screen and (max-width: 767px) {
-                height: auto;
                 max-height: 210px;
                 padding: 10px 0;
             }
             @media only screen and (min-width: 768px) and (max-width: 991px) {
-                height: auto;
                 max-height: 320px;
                 padding: 10px 0;
             }

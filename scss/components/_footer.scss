@@ -8,7 +8,6 @@ footer {
         @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
             width: 100%;
             text-align: center;
-            padding-left: 0;
             padding-top: 10px;
         }
         a {
@@ -37,10 +36,6 @@ footer {
         box-sizing: border-box;
         @media only screen and (max-width: 767px) {
             padding: 10px 0;
-        }
-        @media only screen and (min-width: 768px) and (max-width: 991px) {
-            width: 50%;
-            justify-content: center;
         }
         a {
             text-decoration: none;

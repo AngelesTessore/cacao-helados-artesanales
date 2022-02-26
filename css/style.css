@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Base */
 /* Colores */
-/* Fuente */
+/* Tamaños de Fuente */
 /* Bordes */
 /* Shadows */
 /* Extends */
@@ -48,7 +48,7 @@ body {
 /* Headings - Aplica a todos los html */
 h1 {
   font-size: 48px;
-  padding: 40px;
+  padding: 40px 40px 80px 40px;
   font-weight: bold;
   text-align: center;
   color: #368f96;
@@ -265,9 +265,7 @@ section#nosotros div.flex-container .texto-nosotros {
   }
 }
 section#nosotros div.flex-container .texto-nosotros p {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 100px;
+  padding: 0px 20px 100px 20px;
   font-size: 16px;
   color: #feebeb;
 }
@@ -297,8 +295,7 @@ section#nosotros div.flex-container .galeria {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   section#nosotros div.flex-container .galeria {
     width: 75%;
-    height: 400px;
-    justify-content: center;
+    height: auto;
   }
 }
 section#nosotros div.flex-container .galeria .carousel-item img {
@@ -335,8 +332,7 @@ section#servicios {
   }
 }
 section#servicios h3 {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 80px 0px 40px 0px;
   font-weight: bold;
 }
 section#servicios .flex-container-servicios {
@@ -402,13 +398,6 @@ section.ubicacion-mapa {
   flex-direction: column;
   justify-content: center;
 }
-@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
-  section.ubicacion-mapa {
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
 section.ubicacion-mapa p.ubicacion {
   padding-top: 80px;
   font-size: 18px;
@@ -420,7 +409,7 @@ section.ubicacion-mapa p.ubicacion {
     padding: 30px 0 20px 0;
   }
 }
-@media only screen and (max-width: 767px) and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   section.ubicacion-mapa p.ubicacion {
     font-size: 16px;
   }
@@ -474,7 +463,6 @@ footer {
   footer .div-footer {
     width: 100%;
     text-align: center;
-    padding-left: 0;
     padding-top: 10px;
   }
 }
@@ -502,12 +490,6 @@ footer .socialmedia {
 @media only screen and (max-width: 767px) {
   footer .socialmedia {
     padding: 10px 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  footer .socialmedia {
-    width: 50%;
-    justify-content: center;
   }
 }
 footer .socialmedia a {
@@ -614,8 +596,7 @@ section#seccion-sabores .ed-limitada .sabor-dos {
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   section#seccion-sabores .ed-limitada .sabor-dos {
     width: 60%;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin: 20px 100px 40px 100px;
     align-self: center;
   }
 }
@@ -665,14 +646,6 @@ section#seccion-sabores .ed-limitada .sabor-dos p {
 section#seccion-productos {
   padding: 80px 0;
 }
-section#seccion-productos h1.principal {
-  padding-bottom: 80px;
-}
-@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
-  section#seccion-productos h1.principal {
-    padding-bottom: 30px;
-  }
-}
 section#seccion-productos .productos {
   width: 100%;
   height: 550px;
@@ -684,12 +657,12 @@ section#seccion-productos .productos {
   }
 }
 section#seccion-productos .productos .bloque {
-  line-height: 2;
   margin: 0px 40px;
+  line-height: 2;
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   section#seccion-productos .productos .bloque {
-    margin: 40px 0;
+    margin: 40px 0px;
     line-height: 1.5;
   }
 }
@@ -700,10 +673,10 @@ section#seccion-productos .productos .bloque h2 {
 section#seccion-productos .productos .bloque .lista-productos {
   text-align: center;
   vertical-align: middle;
+  padding: 20px 0px;
   font-size: 16px;
   border-top: 1px solid #368f96;
   border-bottom: 1px solid #368f96;
-  padding: 20px 0px;
   color: #feebeb;
 }
 section#seccion-productos .productos .bloque .lista-productos:hover {
@@ -744,7 +717,7 @@ section .pedidos {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  margin: 60px 0;
+  margin: 20px 0px 60px 0px;
   /* Transición */
   transition: all 1s;
 }
@@ -794,23 +767,22 @@ section#novedades-promos .promos {
   border: none;
   margin-bottom: 80px;
   padding: 10px;
+  box-sizing: border-box;
   color: #feebeb;
   font-size: 16px;
   border-top: 1px solid #368f96;
   border-bottom: 1px solid #368f96;
 }
-@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   section#novedades-promos .promos {
     height: max-content;
-    box-sizing: border-box;
-    border-top: 1px solid #368f96;
-    border-bottom: 1px solid #368f96;
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   section#novedades-promos .promos {
     flex-direction: row;
+    height: max-content;
     font-size: 16px;
   }
 }
@@ -827,7 +799,6 @@ section#novedades-promos .promos:hover a:hover, section#novedades-promos .promos
   color: #011414;
 }
 section#novedades-promos .promos h2 {
-  text-align: left;
   color: #feebeb;
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
@@ -839,14 +810,7 @@ section#novedades-promos .promos h2 {
 section#novedades-promos .promos p {
   padding: 20px;
 }
-@media only screen and (max-width: 767px) {
-  section#novedades-promos .promos p {
-    padding: 20px 10px;
-    text-align: center;
-    word-wrap: break-word;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   section#novedades-promos .promos p {
     padding: 20px 10px;
     text-align: center;
@@ -858,26 +822,10 @@ section#novedades-promos .promos a {
   text-decoration: none;
   font-weight: bold;
 }
-section#novedades-promos .promos a:link {
+section#novedades-promos .promos a:link, section#novedades-promos .promos a:visited, section#novedades-promos .promos a:hover, section#novedades-promos .promos a:active {
   color: #feebeb;
 }
-section#novedades-promos .promos a:visited {
-  color: #feebeb;
-}
-section#novedades-promos .promos a:hover {
-  color: #feebeb;
-}
-section#novedades-promos .promos a:active {
-  color: #feebeb;
-}
-@media only screen and (max-width: 767px) {
-  section#novedades-promos .promos a {
-    padding: 20px 10px;
-    text-align: center;
-    word-wrap: break-word;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   section#novedades-promos .promos a {
     padding: 20px 10px;
     text-align: center;
@@ -891,14 +839,12 @@ section#novedades-promos .promos img {
 }
 @media only screen and (max-width: 767px) {
   section#novedades-promos .promos img {
-    height: auto;
     max-height: 210px;
     padding: 10px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   section#novedades-promos .promos img {
-    height: auto;
     max-height: 320px;
     padding: 10px 0;
   }
@@ -971,7 +917,6 @@ section.contacto form input[type=text], section.contacto form input[type=email] 
   background-color: #ffffff;
   border-radius: 10px;
   border: none;
-  box-sizing: border-box;
 }
 section.contacto form input[type=text]:focus, section.contacto form input[type=email]:focus {
   border: 3px solid #368f96;
@@ -989,7 +934,6 @@ section.contacto form textarea {
   background-color: #ffffff;
   border-radius: 10px;
   border: none;
-  box-sizing: border-box;
 }
 section.contacto form textarea:focus {
   border: 3px solid #368f96;
@@ -1015,7 +959,6 @@ section.contacto form input[type=submit] {
   color: #feebeb;
   border-radius: 10px;
   border: 1px solid #368f96;
-  box-sizing: border-box;
 }
 section.contacto form input[type=submit]:hover {
   background-color: #cfedf2;
