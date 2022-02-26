@@ -47,11 +47,11 @@ body {
 
 /* Headings - Aplica a todos los html */
 h1 {
-  color: #368f96;
-  padding: 40px;
   font-size: 48px;
+  padding: 40px;
   font-weight: bold;
   text-align: center;
+  color: #368f96;
 }
 @media only screen and (max-width: 767px) {
   h1 {
@@ -67,8 +67,9 @@ h1 {
 }
 
 h2 {
-  padding: 20px;
   font-size: 28px;
+  padding: 20px;
+  font-weight: bold;
   text-align: left;
   color: #368f96;
 }
@@ -85,39 +86,18 @@ h2 {
   }
 }
 
-h4 {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  font-size: 28px;
-  font-weight: bold;
+h3 {
+  font-size: 24px;
   color: #368f96;
 }
 @media only screen and (max-width: 767px) {
-  h4 {
+  h3 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h3 {
     font-size: 20px;
-    padding-top: 60px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  h4 {
-    font-size: 24px;
-    padding-top: 60px;
-  }
-}
-
-h3 {
-  font-size: 20px;
-  color: #feebeb;
-  font-weight: bold;
-}
-@media only screen and (max-width: 767px) {
-  h3 {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  h3 {
-    font-size: 18px;
   }
 }
 
@@ -174,7 +154,6 @@ header nav.primera-lista ul, header nav.segunda-lista ul {
 header nav.primera-lista ul li, header nav.segunda-lista ul li {
   display: inline-flex;
   padding: 10px 15px;
-  background-color: #011414;
 }
 header nav.primera-lista ul li a, header nav.segunda-lista ul li a {
   text-decoration: none;
@@ -226,8 +205,6 @@ header nav.segunda-lista .carrito:hover {
 /* Portada */
 section .fondo-portada {
   width: 100%;
-  /*position: absolute;
-  top: 0;*/
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   section .fondo-portada {
@@ -356,6 +333,11 @@ section#servicios {
   section#servicios {
     padding: 60px 0;
   }
+}
+section#servicios h3 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-weight: bold;
 }
 section#servicios .flex-container-servicios {
   display: flex;
@@ -714,7 +696,6 @@ section#seccion-productos .productos .bloque {
 section#seccion-productos .productos .bloque h2 {
   text-align: center;
   padding: 10px;
-  color: #feebeb;
 }
 section#seccion-productos .productos .bloque .lista-productos {
   text-align: center;
@@ -1030,14 +1011,15 @@ section.contacto form input[type=submit] {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: #011414;
+  color: #feebeb;
   border-radius: 10px;
   border: 1px solid #368f96;
   box-sizing: border-box;
 }
 section.contacto form input[type=submit]:hover {
-  background-color: #011414;
-  color: #feebeb;
+  background-color: #cfedf2;
+  color: #011414;
 }
 @media only screen and (max-width: 767px) {
   section.contacto form input[type=submit] {

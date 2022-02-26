@@ -82,13 +82,14 @@ section.contacto {
             text-align: center;
             font-size: $size-font-dsktp-text;
             font-weight: bold;
-            background-color: $color-bg-otros;
+            background-color: $color-bg-light;
+            color: $color-text;
             border-radius: 10px;
             border: $border-general;
             box-sizing: border-box;
             &:hover {
-                background-color: $color-bg-light;
-                color: $color-text;
+                background-color: $color-bg-hover;
+                color: $color-text-hover;
             }
             @media only screen and (max-width: 767px) {
                 width: 25%;
