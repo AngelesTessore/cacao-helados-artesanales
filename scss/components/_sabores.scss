@@ -86,10 +86,12 @@ section#seccion-sabores {
                 @media only screen and (max-width: 767px) {
                     @include img-sizes(100%, auto);
                     max-height: 300px;
+                    max-width: 335px;
                 }
                 @media only screen and (min-width: 768px) and (max-width: 991px) {
                     @include img-sizes(100%, auto);
                     max-height: 350px;
+                    max-width: 375px;
                 }
             }
             p {

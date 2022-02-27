@@ -618,6 +618,7 @@ section#seccion-sabores .ed-limitada .sabor-dos img:hover {
     width: 100%;
     height: auto;
     max-height: 300px;
+    max-width: 335px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -625,6 +626,7 @@ section#seccion-sabores .ed-limitada .sabor-dos img:hover {
     width: 100%;
     height: auto;
     max-height: 350px;
+    max-width: 375px;
   }
 }
 section#seccion-sabores .ed-limitada .sabor-dos p {
